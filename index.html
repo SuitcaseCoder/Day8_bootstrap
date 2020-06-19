@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+
+	<!-- other stuff -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Features</a>
+      <a class="nav-item nav-link" href="#">Pricing</a>
+      <a class="nav-item nav-link disabled" href="#">Disabled</a>
+    </div>
+  </div>
+</nav>
+
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+
+    <ul class="nav navbar-nav">
+      <li class="active"><a class="nav-link" href="#">Home</a></li>
+      <li class="dropdown nav-item">
+        <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">Page 1
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item"><a href="#">Page 1-1</a></li>
+          <li class="dropdown-item"><a href="#">Page 1-2</a></li>
+          <li class="dropdown-item"><a href="#">Page 1-3</a></li> 
+        </ul>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="#">Page 2</a></li> 
+      <li class="nav-item"><a class="nav-link" href="#">Page 3</a></li> 
+    </ul>
+</nav>
+
+
+
+
+      <h1>Day 08</h1>
+	    <div class="container">
+	    	<h2>Grids</h2>
+	      <!-- <div class="col-**-*"></div> -->
+
+	      <div class="row">
+	      	<div class="col-sm-1 green">I'm taking up <strong>1</strong> columns</div>
+
+	        <div class="col-sm-4 green">I'm taking up <strong>4</strong> columns</div>
+	        <div class="col-sm-4  green">I'm taking up <strong>4</strong> columns</div>
+	        <div class="col-sm-4 green">I'm taking up <strong>4</strong> columns</div>
+	      </div>
+
+	      <div class="row">
+			  <div class="col-sm-4 orange">I'm taking up <strong>4</strong> columns</div>
+			  <div class="col-sm-8 orange">I'm taking up <strong>8</strong> columns</div>
+		  </div>
+	    </div>
+
+	    <div class="container">
+	    	<h2>Cards & images</h2>
+ 		    	<div class="card" style="width: 18rem;">
+				  <!-- <img src="leon.jpg" class="card-img-top rounded-circle" alt="...">  -->
+				  <img src="leon.jpg" class="card-img-top" alt="...">
+ 					 <div class="card-body">
+					    <h5 class="card-title">Card title</h5>
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    <a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div> 
+	    </div>
+
+	    <div class="container">
+	    	<h2>Buttons</h2>
+	    	<button class="btn-default">default</button>
+	    	<button class="btn-primary">primary</button>
+	    	<button class="btn-info">info</button>
+	    	<button class="btn-warning">warning</button>
+	    	<button class="btn-danger">danger</button>
+	    	<button class="btn-link">link</button>
+	    	<button class="btn-lg">large</button>
+	    	<button class="btn-sm">small</button>
+	    	<button class="btn-xs">xs</button>
+	    	<button class="active">active</button>
+	    	<button class="btn-default">default</button>
+	    	<button class="disabled">disabled</button>
+	    </div>
+	    <div class="space"></div>
+
+	    <div class="container">
+	    	<h2>Glyphicons</h2>
+	    	<span class="fa fa-asterisk"></span>
+			<span class="fa fa-glass"></span>
+			<span class="fa fa-tree"></span>
+			<span class="fa fa-heart-o"></span>
+	    </div>
+	    <!-- https://fontawesome.bootstrapcheatsheets.com/ -->
+
+	    <div class="container">
+	    	<h2>Glyphicons + buttons</h2>
+	    	<button type="button" class="btn btn-primary"><span class="fa fa-check-circle-o"></span> Primary</button>
+			<button type="button" class="btn btn-success"><span class="fa fa-check-square"></span> Success</button>
+			<button type="button" class="btn btn-info"><span class="fa fa-info-circle"></span> Info</button>
+			<button type="button" class="btn btn-warning"><span class="fa fa-exclamation-triangle"></span> Warning</button>
+			<button type="button" class="btn btn-danger"><span class="fa fa-fire"></span> Danger</button>
+	    </div>
+
+	    <div class="container">
+	    	<p class="lead"> LEAD...Bootstrap is awesome. This class has been so fun to teach! Y'all are all gonna make great web developers!! </p>
+	    	<p class="small"> SMALL...Bootstrap is awesome. This class has been so fun to teach! Y'all are all gonna make great web developers!! </p>
+	    	<p class="text-left"> LEFT...Bootstrap is awesome. This class has been so fun to teach! Y'all are all gonna make great web developers!! </p>
+	    	<p class="text-right"> RIGHT...Bootstrap is awesome. This class has been so fun to teach! Y'all are all gonna make great web developers!! </p>
+	    	<p class="text-justify">JUSTIFY...Bootstrap is awesome. This class has been so fun to teach! Y'all are all gonna make great web developers!! </p>
+	    	<p class="text-nowrap">NO WRAP...Bootstrap is awesome. This class has been so fun to teach! Y'all are all gonna make great web developers!! lorem laskdjfiaenfkasjfiaejnfiasfiasjfaskdjfilasjfnaskjfnasijfnalskjfnaiurfnailfjasdpifjsofknasdkfmnailranlsirjnisjrnfkasjdnfvlkajfsnvailsdunvalsdkjfnvalisjnvafdljkvnaldfjn </p>
+	    	<p class="text-lowercase">LOWERCASE...Bootstrap is awesome. This class has been so fun to teach! Y'all are all gonna make great web developers!! </p>	    	<p class="text-UPPERCASE">UPPERCASE...Bootstrap is awesome. This class has been so fun to teach! Y'all are all gonna make great web developers!! </p>	    	<p class="text-CAPITALIZE">ALL CAPS...Bootstrap is awesome. This class has been so fun to teach! Y'all are all gonna make great web developers!! </p>
+
+	    </div>
+	    <footer>
+	    	
+	    </footer>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
